@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Maze
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="title"> 
+        MAZE GENERATION 
+    </h1>
+
+    <div class="completed">
+        <h3>
+            Maze Completed.
+        </h3>
+        <button class="replay">
+            Play again
+        </button>
+        <button class="close">
+            Close
+        </button>
+    </div>
+
+    <form id="script">
+
+        <label for="space">Side of maze</label>
+        <br>
+        <input type="number" name="space" id="space" value="500">
+        <br>
+        <label for="rowsCols">Number of Rows / Columns</label>
+        <br>
+        <input type="number" name="rowsCols)" id="rowsCols" value="10">
+        <br>
+        <input type="submit" value="Generate Maze" id="submit">
+
+    </form>
+
+    <canvas class="maze">
+
+    </canvas>
+
+    <script src="maze.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

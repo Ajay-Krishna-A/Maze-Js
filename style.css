@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*
+{
+    font-family: Roboto;
+    ;
+}
+body
+{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(38, 38, 49);
+}
+
+.title
+{
+   text-align: center;
+   color: rgb(146, 255, 112);
+   font-size: 1em;
+   margin: 60px;
+}
+
+.completed {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    
+    background: #ffffff;
+    z-index: 4;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+}
+#script {
+    position: absolute;
+    padding: 1.5rem;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+   
+    border-radius: 10px;
+    background-color: #2a2e33;
+    font-size: 1rem;
+    z-index: 2;
+    color: rgb(142, 74, 173);
+  }
+
+  input {
+    margin-bottom: 1rem;
+    background-color: #2a2e33;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    margin-top: 0.2rem;
+    color: #ffffff;
+  }
+
+  #submit {
+    background-color: #161616;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 0.4rem;
+    cursor: pointer;
+    margin: 1rem;
+    color: rgb(250, 135, 90);
+  }
+  
+  #submit:hover {
+    text-shadow: 1px 1px 5px #ffa468cb;
+    border: 1px solid rgb(250, 135, 90);
+
+  } 
+  
+  .maze {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .replay,
+  .close
+  {
+    background-color: rgb(127, 255, 155);
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    min-width: 100px;
+    margin-bottom: 20px;
+  }
+
+  .close
+  {
+    background-color: rgb(250, 89, 89);
+  }
+
